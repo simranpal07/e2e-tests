@@ -1,0 +1,30 @@
+{
+  "name": "e2e-tests",
+  "version": "1.0.0",
+  "description": "Api and UI automation",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf typeScript/",
+    "clean-build": "npm run clean && npm run build",
+    "e2e": "protractor typeScript/config/config.js --suite=\"Suite1\"",
+    "webdriver-update": "webdriver-manager update --versions.chrome=83.0.4103.39"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^4.0.3",
+    "protractor": "~5.4.0",
+    "protractor-cucumber-framework": "^6.1.1",
+    "typed-rest-client": "^1.7.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.1",
+    "@types/cucumber": "^4.0.7",
+    "@types/node": "^10.7.1",
+    "typescript": "~3.4.5",
+    "ts-node": "^8.0.2"
+  },
+  "author": "Simranpal Singh"
+}
