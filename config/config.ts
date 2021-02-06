@@ -18,6 +18,7 @@ export const config: Config = {
 
     baseUrl: `http://www.way2automation.com/angularjs-protractor/registeration/#/login`,
     baseUrlTest: `https://xxx${process.env.ENVIRONMENT}.com`,
+    baseUrlAirBnb: `https://www.airbnb.co.in/`,
 
     getEndPointUri: `https://xxxxxxxxxxxxxx/api/v1/getEndpoint`,
     postEndPointUri: `https://xxxxxxxxxxxxxx/api/v1/postEndpoint`,
@@ -71,7 +72,7 @@ export const config: Config = {
 
     suites: {
         Suite1:[
-            '../../features/login.feature',
+            '../../features/airbnbTest.feature',
         ],
         Suite2:[
             '../../features/login.feature',
